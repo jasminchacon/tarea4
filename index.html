@@ -1,10 +1,116 @@
 <html lang="en">
+
 <head>
+    <link rel="shortcut icon" href="img/logo-isotipo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tarea 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Cornellius</title>
 </head>
+
 <body>
-    <h1>tarea 4</h1>
+    <header>
+        <a href="logo-de-pagina" class="logo">
+            <img src="./assets/logo-text.png" alt="Logo de pagina">
+        </a>
+        <nav>
+            <ul id="nav-desktop">
+                <li>Home</li>
+                <li>Productos</li>
+                <li>Sobre Nosotros</li>
+                <li>Contactenos</li>
+            </ul>
+            <!--nav mobile-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-mobile">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Contactenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section id="slider-container">
+            <img class="slider-item" src="./assets/bannerDesktop.png" alt="imagen de referencia carousel">
+            <img class="slider-item" src="./assets/bannerDesktop1.png" alt="imagen de referencia carousel">
+            <img class="slider-item" src="./assets/bannerDesktop2.png" alt="imagen de referencia carousel">
+            <div class="carousel-caption">
+                <h2 class="text-slider-container">Nueva colección</h2>
+                <p class="text-slider-item">Esenciales para el closet de los más pequeños</p>
+                <button class="button-carousel">Ver toda la colección</button>
+            </div>
+        </section>
+        <!--desktop-->
+        <section id="producto-destacados">
+            <div class="producto-destacado">
+                <img class="img-producto-destacado" src="./assets/cardProduct1.png" alt="imagen de referencia">
+                <div class="contenido">
+                    <h3>Conjunto estampado 2 piezas</h3>
+                    <p>$15.990</p>
+                    <p>Conjunto de dos piezas en tela de buzo con motivo estampado. Polerón sin capucha y hombros
+                        caídos. Puños y basta en punto elástico acanalado. Joggers con cintura elástica con cordón de
+                        ajuste. Sin cierre.
+                    </p>
+                    <a>Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto-destacado">
+                <img class="img-producto-destacado" src="./assets/cardProduct1.png" alt="imagen de referencia">
+                <div class="contenido">
+                    <h3>Conjunto estampado 2 piezas</h3>
+                    <p>$15.990</p>
+                    <p>Conjunto de dos piezas en tela de buzo con motivo estampado. Polerón sin capucha y hombros
+                        caídos. Puños y basta en punto elástico acanalado. Joggers con cintura elástica con cordón de
+                        ajuste. Sin cierre.
+                    </p>
+                    <a>Comprar</a>
+                </div>
+            </div>
+            <div class="producto-destacado">
+                <img class="img-producto-destacado" src="./assets/cardProduct1.png" alt="imagen de referencia">
+                <div class="contenido">
+                    <h3>Cojunto estampado 2 piezas</h3>
+                    <p>$15.990</p>
+                    <p>Conjunto de dos piezas en tela de buzo con motivo estampado. Polerón sin capucha y hombros
+                        caídos. Puños y basta en punto elástico acanalado. Joggers con cintura elástica con cordón de
+                        ajuste. Sin cierre.
+                    </p>
+                    <a>Comprar</a>
+                </div>
+            </div>
+            <div class="producto-destacado">
+                <img class="img-producto-destacado" src="./assets/cardProduct1.png" alt="imagen de referencia">
+                <div class="contenido">
+                    <h3>Conjunto estampado 2 piezas</h3>
+                    <p>$15.990</p>
+                    <p>Conjunto de dos piezas en tela de buzo con motivo estampado. Polerón sin capucha y hombros
+                        caídos. Puños y basta en punto elástico acanalado. Joggers con cintura elástica con cordón de
+                        ajuste. Sin cierre.
+                    </p>
+                    <a>Comprar</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
