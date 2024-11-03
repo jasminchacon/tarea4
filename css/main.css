@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    padding: 12px;
+    font-size: 18px;
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1023px) {
+    #nav-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #nav-mobile {
+        display: none;
+    }
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header ul li {
+    font-size: 18px;
+    padding: 12px 12px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+header ul li:last-of-type {
+    border-right: unset;
+}
+
+header ul li {
+    font-size: 22px;
+}
+
+#slider-container {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+.text-slider-container {
+    display: flex;
+    font-size: 26px;
+}
+
+.text-slider-item {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.button-carousel {
+    display: flex;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 540px;
+}
+
+.button-carousel:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#producto-destacados {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.producto-destacado {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto 200px 100px;
+    justify-content: center;
+}
+
+.img-producto-destacado {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.producto-destacado:nth-last-of-type(odd) img {
+    order: 2;
+}
+
+.producto-destacado .contenido {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.producto-destacado .contenido h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.producto-destacado .contenido p {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.producto-destacado .contenido a {
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.producto-destacado .contenido a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.contenedor-footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+@media (max-width: 1024px) {
+    .contenedor-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.logo-footer {
+    padding: 15px 15px;
+}
+
+.contenedor-footer p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 50px;
+    padding-left: 15px;
+}
+
+.centro-de-ayuda {
+    list-style-type: none;
+    margin: 100px 150px;
+}
+@media (max-width: 768px) {
+    .contenedor-footer {
+        grid-template-columns: 1fr;
+    }
+}
+.suscribete-footer {
+    list-style-type: none;
+    margin: 100px 70px;
+}
+
+.siguenos-footer {
+    margin: 100px 50px;
+}
+
+.creditos-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    .contenedor-footer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .centro-de-ayuda, .suscribete-footer, .siguenos-footer {
+        margin: 50px 50px;
+    }
+    .contenedor-footer p {
+        margin-top: 20px;
+    }
+}
